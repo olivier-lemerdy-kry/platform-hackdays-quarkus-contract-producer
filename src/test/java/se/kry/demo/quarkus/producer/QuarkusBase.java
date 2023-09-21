@@ -1,4 +1,4 @@
-package se.kry;
+package se.kry.demo.quarkus.producer;
 
 import io.quarkus.test.junit.QuarkusTest;
 

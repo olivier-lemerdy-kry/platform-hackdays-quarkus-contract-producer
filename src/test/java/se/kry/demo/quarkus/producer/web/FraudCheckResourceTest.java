@@ -1,13 +1,13 @@
-package se.kry;
-
-import io.quarkus.test.junit.QuarkusTest;
-import org.junit.jupiter.api.Test;
+package se.kry.demo.quarkus.producer.web;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
+import io.quarkus.test.junit.QuarkusTest;
+import org.junit.jupiter.api.Test;
+
 @QuarkusTest
-public class ExampleResourceTest {
+public class FraudCheckResourceTest {
 
   @Test
   public void testHelloEndpoint() {
@@ -17,5 +17,4 @@ public class ExampleResourceTest {
         .statusCode(200)
         .body(is("Hello from RESTEasy Reactive"));
   }
-
 }
