@@ -7,14 +7,14 @@ import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 
 @QuarkusTest
-public class FraudCheckResourceTest {
+class FraudCheckResourceTest {
 
   @Test
-  public void testHelloEndpoint() {
+  void testFraudcheckEndpoint() {
     given()
-        .when().get("/hello")
+        .when().put("/fraudcheck")
         .then()
         .statusCode(200)
-        .body(is("Hello from RESTEasy Reactive"));
+        .body(is("{\"fraudCheckStatus\":\"FRAUD\",\"rejection\":\"Amount too high\"}"));
   }
 }

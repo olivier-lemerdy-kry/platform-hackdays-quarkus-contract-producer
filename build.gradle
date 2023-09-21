@@ -42,7 +42,7 @@ compileTestJava {
 }
 
 contracts {
-    baseClassForTests = 'se.kry.QuarkusBase'
+    baseClassForTests = 'se.kry.demo.quarkus.producer.QuarkusBase'
 }
 
 publishing {
